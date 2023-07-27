@@ -22,4 +22,22 @@ body{
 
 .video-container{
     display: flex;
+    flex-direction: column;
+}
+
+.thumbnail{
+    position: relative;
+    display: flex;
+}
+
+.thumbnail::before{
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba( 0, 0, 0, .85);
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size:
 }
